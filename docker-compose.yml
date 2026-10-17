@@ -1,0 +1,11 @@
+# Local run: docker compose up --build, then open http://localhost:3000
+services:
+  app:
+    build: .
+    ports:
+      - "127.0.0.1:3000:3000"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - PORT=3000

@@ -1,0 +1,8 @@
+# Heroku container stack: builds the same Dockerfile CI builds.
+# Unused until a project gets a staging app (PIPELINE.md Stage 6), which
+# costs money and needs Paul's approval first.
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: node dist/server.js
