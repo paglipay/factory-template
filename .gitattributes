@@ -1,0 +1,3 @@
+# Keep LF everywhere so Dockerfiles, scripts, and worktrees behave the same
+# in Linux containers, CI, and on Windows.
+* text=auto eol=lf
